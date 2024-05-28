@@ -2,6 +2,8 @@ import { projects } from "../../constants/projectsData";
 import H2 from "../H2";
 import ProjectCard from "./ProjectCard";
 
+// git config changes
+
 const ProjectsSection = () => {
   return (
     <section id="projects">
