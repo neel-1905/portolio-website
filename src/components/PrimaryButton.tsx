@@ -1,10 +1,4 @@
-import {
-  ButtonHTMLAttributes,
-  ComponentProps,
-  DetailedHTMLProps,
-  FC,
-  ReactNode,
-} from "react";
+import { ButtonHTMLAttributes, DetailedHTMLProps, FC } from "react";
 import { MotionProps, motion } from "framer-motion";
 
 type MotionButtonProps = MotionProps &
