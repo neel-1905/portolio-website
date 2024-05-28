@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary-blue": "var(--primary-blue)",
+        "theme-primary": "var(--theme-primary)",
 
         background: "var(--background)",
         "text-primary": "var(--text-primary)",
@@ -18,9 +18,12 @@ export default {
         "nav-link": "var(--nav-link)",
         "nav-link-hover": "var(--nav-link-hover)",
         "btn-text-primary": "var(--btn-text-primary)",
+
+        "card-bg": "var(--card-bg)",
       },
       fontFamily: {
         "reddit-mono": ["Reddit Mono", "monospace"],
+        lexend: ["Lexend", "sans-serif"],
       },
     },
   },

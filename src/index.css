@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -16,40 +17,44 @@ body {
   width: 100vw;
 }
 
+:root {
+  --theme-primary: #6e77e4;
+  --nav-link: var(--theme-primary);
+  --nav-link-hover: #545cbd;
+  --btn-danger: #d32f2f;
+}
+
 .light {
   --background: #f4f4f4;
-  --primary-blue: #007bff;
 
   --text-primary: #333333;
   --text-secondary: #666666;
   --placeholder: #999999;
-  --btn-primary: var(--primary-blue);
+  --btn-primary: var(--theme-primary);
   --btn-text-primary: #e0e0e0;
   --btn-secondary: #e0e0e0;
-  --btn-danger: #ff4b4b;
-  --nav-link: var(--primary-blue);
-  --nav-link-hover: #002f62;
+
   --nav-icons: var(--text-primary);
+
+  --card-bg: #e0e0e0;
 
   background: var(--background);
 }
 
 .dark {
   --background: #121212;
-  --primary-blue: #007bff;
 
   --text-primary: #e0e0e0;
   --text-secondary: #8e8e8e;
   --placeholder: #757575;
-  --btn-primary: var(--primary-blue);
+  --btn-primary: var(--theme-primary);
   --btn-text-primary: #e0e0e0;
   --btn-secondary: #333333;
-  --btn-danger: #d32f2f;
+
   --border-primary: #333333;
-  --nav-link: var(--primary-blue);
-  --nav-link-hover: #408ad9;
   --nav-icons: var(--text-primary);
-  /* --text-primary: #f4f4f4; */
+
+  --card-bg: #1e1e1e;
 
   background: var(--background);
 }

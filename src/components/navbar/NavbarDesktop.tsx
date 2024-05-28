@@ -5,6 +5,7 @@ import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 import { useTheme } from "../ThemeWrapper";
 import { LINKEDIN, PERSONAL_GITHUB } from "../../constants/socialLinks";
+import { HashLink } from "react-router-hash-link";
 
 const NavbarDesktop = () => {
   const { theme, toggleTheme } = useTheme();
@@ -13,12 +14,26 @@ const NavbarDesktop = () => {
     <div className="hidden lg:flex justify-between py-5 items-center">
       <div>
         <Link to={`/`}>
-          <h1 className="text-text-primary text-3xl">Logo</h1>
+          <h1 className="text-text-primary text-3xl font-lexend">Logo</h1>
         </Link>
       </div>
       <div className="flex items-center gap-8">
         <ul className="flex text-nav-link font-medium items-center gap-4 text-lg">
           {navLinks.map(({ link, name }, index) => {
+            if (link.includes("#")) {
+              return (
+                <li key={index}>
+                  <HashLink
+                    className="hover:text-nav-link-hover"
+                    to={link}
+                    smooth
+                  >
+                    {name}
+                  </HashLink>
+                </li>
+              );
+            }
+
             return (
               <li key={index}>
                 <Link className="hover:text-nav-link-hover" to={link}>

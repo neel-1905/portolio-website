@@ -3,6 +3,7 @@ import { NAV_LINK, navLinks } from "../../constants/navLinks";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { LINKEDIN, PERSONAL_GITHUB } from "../../constants/socialLinks";
+import { HashLink } from "react-router-hash-link";
 
 const NavDrawer = ({
   isOpen,
@@ -25,11 +26,30 @@ const NavDrawer = ({
         </div>
 
         <div className="px-7 py-2">
-          <ul className=" flex flex-col gap-10">
-            {navLinks.map((item: NAV_LINK) => {
+          <ul className=" flex flex-col gap-10 text-nav-link">
+            {navLinks.map((item: NAV_LINK, index) => {
+              if (item.link.includes("#")) {
+                return (
+                  <li key={index} className="text-xl" onClick={closeDrawer}>
+                    <HashLink
+                      className="hover:text-nav-link-hover"
+                      to={item.link}
+                    >
+                      {item.name}
+                    </HashLink>
+                  </li>
+                );
+              }
+
               return (
-                <li className="text-xl">
-                  <Link to={item.link}>{item.name}</Link>
+                <li key={index} className="text-xl">
+                  <Link
+                    className="hover:text-nav-link-hover"
+                    to={item.link}
+                    onClick={closeDrawer}
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               );
             })}

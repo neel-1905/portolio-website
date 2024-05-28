@@ -20,7 +20,9 @@ const NavbarMobile = () => {
     <>
       <div className="lg:hidden flex justify-between items-center py-5">
         <div>
-          <h1 className="text-2xl text-text-primary">Logo</h1>
+          <h1 className="text-2xl text-text-primary font-medium font-lexend">
+            Logo
+          </h1>
         </div>
         <div className="flex items-center gap-5">
           {theme === "light" ? (
