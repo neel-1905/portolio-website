@@ -2,6 +2,7 @@ import { projects } from "../../constants/projectsData";
 import H2 from "../H2";
 import Section from "../Section";
 import ProjectCard from "./ProjectCard";
+import TechStack from "./TechStack";
 
 const ProjectsSection = () => {
   return (
@@ -10,7 +11,6 @@ const ProjectsSection = () => {
         <div className="w-full mb-10">
           <div className="w-full mb-10">
             <H2>Projects</H2>
-            <div className="h-1 w-20 bg-theme-primary rounded"></div>
           </div>
           <p className="w-full leading-relaxed text-text-secondary text-lg font-normal font-lexend">
             I have worked on a diverse range of web development projects
@@ -26,6 +26,11 @@ const ProjectsSection = () => {
             return <ProjectCard key={index} project={item} />;
           })}
         </div>
+      </div>
+
+      <div className="py-10">
+        <H2>Tech Stack</H2>
+        <TechStack />
       </div>
     </Section>
   );

@@ -55,17 +55,21 @@ const NavbarDesktop = () => {
 
         <div className="text-text-primary flex items-center">
           {theme === "light" ? (
-            <MdDarkMode
-              onClick={toggleTheme}
-              size={21}
-              className="cursor-pointer"
-            />
+            <button>
+              <MdDarkMode
+                onClick={toggleTheme}
+                size={21}
+                className="cursor-pointer"
+              />
+            </button>
           ) : (
-            <MdLightMode
-              onClick={toggleTheme}
-              size={21}
-              className="cursor-pointer"
-            />
+            <button>
+              <MdLightMode
+                onClick={toggleTheme}
+                size={21}
+                className="cursor-pointer"
+              />
+            </button>
           )}
         </div>
       </div>
