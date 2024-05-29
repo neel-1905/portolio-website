@@ -1,10 +1,11 @@
 import { projects } from "../../constants/projectsData";
 import H2 from "../H2";
+import Section from "../Section";
 import ProjectCard from "./ProjectCard";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects">
+    <Section id="projects">
       <div>
         <div className="w-full mb-10">
           <div className="w-full mb-10">
@@ -26,7 +27,7 @@ const ProjectsSection = () => {
           })}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

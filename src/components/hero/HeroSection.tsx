@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import PrimaryButton from "../PrimaryButton";
 import Resume from "../../assets/docs/resume.pdf";
 import { motion } from "framer-motion";
+import Section from "../Section";
 
 const HeroSection = () => {
   return (
-    <section className="h-screen flex items-center">
+    <Section className="h-screen flex items-center">
       <motion.div
         initial={{
           opacity: 0,
@@ -50,7 +51,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </motion.div>
-    </section>
+    </Section>
   );
 };
 

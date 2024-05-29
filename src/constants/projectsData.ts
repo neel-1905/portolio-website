@@ -10,6 +10,13 @@ export type PROJECT = {
 
 export const projects: PROJECT[] = [
   {
+    title: "Furation Tech Official Website",
+    category: "Website",
+    image: projectImages.furation,
+    description: "The official website of Furation Tech Solutions Pvt. Ltd.",
+    link: "https://www.furation.tech/",
+  },
+  {
     title: "Steelora",
     category: "CMS",
     image: projectImages.steelora,
@@ -54,7 +61,7 @@ export const projects: PROJECT[] = [
     category: "Web Application",
     image: projectImages.reserve1st,
     description:
-      "Aspect Sports website was developed for creating and online presence of the Aspect Group. They are also the owner of the ISPL team Tiigers of Kolkata.",
-    link: "https://aspectsports.in/",
+      "Reserve1st is a guest management system developed for managing guest reservations, bookings and maintain a record of the clients for future use by the restaurant. This system allows the restaurant to keeps track of its guests and manage bookings accordingly",
+    link: "https://estella.reserve1st.com/",
   },
 ];

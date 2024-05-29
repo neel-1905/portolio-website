@@ -1,3 +1,5 @@
+import GoToTop from "./components/GoToTop";
+import ScrollProgress from "./components/ScrollProgress";
 import { ThemeProvider } from "./components/ThemeWrapper";
 import Navbar from "./components/navbar/Navbar";
 import HomePage from "./components/pages/HomePage";
@@ -14,12 +16,15 @@ const App = () => {
             <Navbar />
           </header>
           <main>
-            <div className="max-w-6xl px-7 mx-auto">
+            <div className="max-w-6xl px-7 mx-auto ">
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
+
+            <ScrollProgress />
+            <GoToTop />
           </main>
           <footer></footer>
         </Router>

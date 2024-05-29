@@ -43,7 +43,7 @@ const ProjectCard = ({ project }: { project: PROJECT }) => {
           {project.description}
         </p>
 
-        <Link to={project.link ?? "/"} className="mt-auto">
+        <Link to={project.link ?? "/"} target="_blank" className="mt-auto">
           <PrimaryButton>View Project</PrimaryButton>
         </Link>
       </div>

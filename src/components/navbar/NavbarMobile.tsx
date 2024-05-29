@@ -18,7 +18,7 @@ const NavbarMobile = () => {
 
   return (
     <>
-      <div className="lg:hidden flex justify-between items-center py-5">
+      <div className="lg:hidden flex justify-between items-center py-5 px-7 max-w-6xl">
         <div>
           <h1 className="text-2xl text-text-primary font-medium font-lexend">
             Logo

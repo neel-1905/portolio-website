@@ -4,7 +4,7 @@ import NavbarMobile from "./NavbarMobile";
 const Navbar = () => {
   return (
     <>
-      <nav className="z-20 fixed top-0 left-0 right-0 max-w-6xl mx-auto font-reddit-mono px-7 bg-background">
+      <nav className="z-20 fixed top-0 left-0 right-0 w-full mx-auto font-reddit-mono  bg-background">
         <NavbarDesktop />
         <NavbarMobile />
       </nav>
