@@ -20,8 +20,9 @@ body {
 :root {
   --theme-primary: #6e77e4;
   --nav-link: var(--theme-primary);
-  --nav-link-hover: #545cbd;
+  --nav-link-hover: #4b53aa;
   --btn-danger: #d32f2f;
+  --btn-hover-primary: #4b53aa;
 }
 
 .light {

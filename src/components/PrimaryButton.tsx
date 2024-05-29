@@ -10,7 +10,7 @@ const PrimaryButton: FC<MotionButtonProps> = (btnProps) => {
   return (
     <motion.button
       whileTap={{ scale: 0.85 }}
-      className="bg-btn-primary px-3 py-2 font-lexend rounded-md text-btn-text-primary"
+      className="bg-btn-primary hover:bg-btn-hover-primary transition-all duration-300 px-3 py-2 font-lexend rounded-md text-btn-text-primary"
       {...props}
     >
       {children}

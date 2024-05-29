@@ -18,6 +18,7 @@ export default {
         "nav-link": "var(--nav-link)",
         "nav-link-hover": "var(--nav-link-hover)",
         "btn-text-primary": "var(--btn-text-primary)",
+        "btn-hover-primary": "var(--btn-hover-primary)",
 
         "card-bg": "var(--card-bg)",
       },
