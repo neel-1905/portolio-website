@@ -6,6 +6,7 @@ import { MdLightMode } from "react-icons/md";
 import { useTheme } from "../ThemeWrapper";
 import { LINKEDIN, PERSONAL_GITHUB } from "../../constants/socialLinks";
 import { HashLink } from "react-router-hash-link";
+import logo from "../../assets/images/N.png";
 
 const NavbarDesktop = () => {
   const { theme, toggleTheme } = useTheme();
@@ -14,7 +15,9 @@ const NavbarDesktop = () => {
     <div className="hidden lg:flex justify-between py-5 items-center max-w-6xl mx-auto px-7">
       <div>
         <Link to={`/`}>
-          <h1 className="text-text-primary text-3xl font-lexend">Logo</h1>
+          <h1 className="text-text-primary text-3xl font-lexend">
+            <img height={40} width={40} src={logo} alt="Neel" />
+          </h1>
         </Link>
       </div>
       <div className="flex items-center gap-8">
@@ -45,10 +48,10 @@ const NavbarDesktop = () => {
         </ul>
 
         <div className="flex items-center gap-2 text-text-primary">
-          <Link to={PERSONAL_GITHUB}>
+          <Link target="_blank" to={PERSONAL_GITHUB}>
             <FaGithub size={21} />
           </Link>
-          <Link to={LINKEDIN}>
+          <Link target="_blank" to={LINKEDIN}>
             <FaLinkedin size={21} />
           </Link>
         </div>

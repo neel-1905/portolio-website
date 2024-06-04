@@ -56,10 +56,10 @@ const NavDrawer = ({
 
             <li>
               <div className="flex items-center gap-4 text-text-primary">
-                <Link to={PERSONAL_GITHUB}>
+                <Link target="_blank" to={PERSONAL_GITHUB}>
                   <FaGithub size={21} />
                 </Link>
-                <Link to={LINKEDIN}>
+                <Link target="_blank" to={LINKEDIN}>
                   <FaLinkedin size={21} />
                 </Link>
               </div>

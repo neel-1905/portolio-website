@@ -3,6 +3,7 @@ import Section from "../Section";
 import Input from "./Input";
 import { TextArea } from "./TextArea";
 import PrimaryButton from "../PrimaryButton";
+import toast from "react-hot-toast";
 
 type FORM = {
   name: string;
@@ -14,13 +15,28 @@ const ContactSection = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<FORM>({
     mode: "all",
   });
 
-  const onSubmit = (data: FORM) => {
-    console.log(data);
+  const onSubmit = async (data: FORM) => {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...data,
+        access_key: import.meta.env.VITE_FORM_ACCESS_KEY,
+      }),
+    });
+
+    if (res.ok) {
+      toast.success("Your message was successfully sent !", {
+        duration: 3000,
+      });
+    }
   };
 
   return (
@@ -45,6 +61,7 @@ const ContactSection = () => {
               })}
               error={errors.name?.message}
               required
+              capitalize
             />
             <Input
               {...register("email", {
@@ -70,7 +87,9 @@ const ContactSection = () => {
             />
           </div>
 
-          <PrimaryButton>Submit</PrimaryButton>
+          <PrimaryButton disabled={isSubmitting}>
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </PrimaryButton>
         </form>
       </div>
     </Section>

@@ -3,6 +3,7 @@ import { RiMenu3Line } from "react-icons/ri";
 import NavDrawer from "./NavDrawer";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { useTheme } from "../ThemeWrapper";
+import logo from "../../assets/images/N.png";
 
 const NavbarMobile = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
@@ -21,7 +22,7 @@ const NavbarMobile = () => {
       <div className="lg:hidden flex justify-between items-center py-5 px-7 max-w-6xl">
         <div>
           <h1 className="text-2xl text-text-primary font-medium font-lexend">
-            Logo
+            <img height={35} width={35} src={logo} alt="Neel" />
           </h1>
         </div>
         <div className="flex items-center gap-5">

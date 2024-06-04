@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import GoToTop from "./components/GoToTop";
 import ScrollProgress from "./components/ScrollProgress";
 import { ThemeProvider } from "./components/ThemeWrapper";
@@ -32,6 +33,8 @@ const App = () => {
           </footer>
         </Router>
       </ThemeProvider>
+
+      <Toaster />
     </div>
   );
 };

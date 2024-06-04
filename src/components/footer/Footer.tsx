@@ -7,6 +7,7 @@ import {
 } from "../../constants/socialLinks";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import logo from "../../assets/images/N.png";
 
 const Footer = () => {
   const socialLinks = [
@@ -16,14 +17,14 @@ const Footer = () => {
       icon: <FaGithub size={22} className="text-text-primary" />,
     },
     {
-      name: "insta",
-      link: INSTAGRAM,
-      icon: <FaInstagram size={22} className="text-text-primary" />,
+      name: "linkedin",
+      link: LINKEDIN,
+      icon: <FaLinkedin size={22} className="text-text-primary" />,
     },
     {
       name: "insta",
-      link: LINKEDIN,
-      icon: <FaLinkedin size={22} className="text-text-primary" />,
+      link: INSTAGRAM,
+      icon: <FaInstagram size={22} className="text-text-primary" />,
     },
   ];
 
@@ -36,9 +37,10 @@ const Footer = () => {
             to={"/#"}
             className="flex title-font font-medium items-center md:justify-start justify-center text-white"
           >
-            <span className="ml-3 text-lg md:text-xl text-theme-primary">
+            {/* <span className="ml-3 text-lg md:text-xl text-theme-primary">
               Neel Narwadkar
-            </span>
+            </span> */}
+            <img height={40} width={40} src={logo} alt="Neel" />
           </HashLink>
           <p className="text-sm text-text-primary sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2">
             © {new Date().getFullYear()} Neel Narwadkar —
@@ -46,7 +48,11 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-3">
           {socialLinks.map((item) => {
-            return <Link to={item.link}>{item.icon}</Link>;
+            return (
+              <Link target="_blank" to={item.link}>
+                {item.icon}
+              </Link>
+            );
           })}
         </div>
       </div>
