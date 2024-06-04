@@ -1,4 +1,5 @@
 import H3 from "../H3";
+import ftsLogo from "../../assets/images/fts_logo.jpg";
 
 const Experience = () => {
   return (
@@ -9,16 +10,19 @@ const Experience = () => {
           <div className="h-full text-center">
             <img
               alt="testimonial"
-              className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10"
-              src="https://dummyimage.com/302x302"
+              className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-border-primary"
+              src={ftsLogo}
             />
-            <p className="leading-relaxed text-justify text-text-primary">
-              Edison bulb retro cloud bread echo park, helvetica stumptown
-              taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
-              ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
-              adaptogen squid fanny pack vaporware.
+            <p className="leading-relaxed text-justify text-text-primary font-medium">
+              Worked on different types of projects such as CMS, Web
+              Applications, Admin Panels, as well as static websites. Also
+              worked partly on backend of web applications using Node and
+              Express.
             </p>
             <span className="inline-block h-1 w-10 rounded bg-theme-primary mt-6 mb-4"></span>
+            <p className="text-text-secondary text-sm mb-2">
+              June 2023 - May 2024
+            </p>
             <h4 className="text-text-primary font-medium title-font tracking-wider text-sm uppercase">
               Furation tech solutions PVT LTD
             </h4>

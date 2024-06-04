@@ -4,24 +4,36 @@ const Education = () => {
   return (
     <>
       <H3>Education</H3>
-      <div className=" px-5 py-10 ">
-        <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div className="h-full w-[3px] bg-border-primary pointer-events-none"></div>
+      <div className=" px-5 py-10 flex flex-col gap-10">
+        <div className="flex flex-wrap  font-lexend">
+          <div className="w-full md:w-1/4  p-2">
+            <p className="text-sm lg:text-base text-text-secondary font-medium">
+              August 2023 - Present
+            </p>
           </div>
-          <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
-            1
+          <div className="w-full md:w-3/4  p-2">
+            <h4 className="text-text-primary font-medium mb-1 text-lg">
+              Master of Science in Information Technology
+            </h4>
+            <p className="text-text-secondary">
+              V. G. Vaze College of Arts, Science and Commerce
+            </p>
           </div>
-          <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 className="font-medium title-font text-white mb-1 text-xl">
-                Shooting Stars
-              </h2>
-              <p className="leading-relaxed">
-                VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                bespoke try-hard cliche palo santo offal.
-              </p>
-            </div>
+        </div>
+
+        <div className="flex flex-wrap  font-lexend">
+          <div className="w-full md:w-1/4  p-2">
+            <p className="text-sm lg:text-base text-text-secondary font-medium">
+              August 2019 - April 2022
+            </p>
+          </div>
+          <div className="w-full md:w-3/4  p-2">
+            <h4 className="text-text-primary font-medium mb-1 text-lg">
+              Bachelor of Science in Information Technology
+            </h4>
+            <p className="text-text-secondary">
+              V. G. Vaze College of Arts, Science and Commerce
+            </p>
           </div>
         </div>
       </div>
