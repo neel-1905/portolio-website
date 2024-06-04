@@ -7,7 +7,7 @@ import TechStack from "./TechStack";
 const ProjectsSection = () => {
   return (
     <Section id="projects">
-      <div>
+      <div className="py-10">
         <div className="w-full mb-10">
           <div className="w-full mb-10">
             <H2>Projects</H2>

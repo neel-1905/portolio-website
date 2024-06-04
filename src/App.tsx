@@ -1,6 +1,7 @@
 import GoToTop from "./components/GoToTop";
 import ScrollProgress from "./components/ScrollProgress";
 import { ThemeProvider } from "./components/ThemeWrapper";
+import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import HomePage from "./components/pages/HomePage";
 import NotFound from "./components/pages/NotFound";
@@ -26,7 +27,9 @@ const App = () => {
             <ScrollProgress />
             <GoToTop />
           </main>
-          <footer></footer>
+          <footer>
+            <Footer />
+          </footer>
         </Router>
       </ThemeProvider>
     </div>

@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 
 const TechStack = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-5 mt-10">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-5 py-10">
       {techStack.map((item) => {
         return (
           <motion.div
+            key={item.name}
             whileHover={{ scale: 1.2 }}
-            className="h-28 p-7 m-auto bg-card-bg rounded-lg"
+            className="h-28 p-7 m-auto bg-card-bg rounded-lg shadow-md"
           >
             <img
               src={item.img}

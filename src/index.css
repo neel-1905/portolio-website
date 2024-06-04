@@ -34,6 +34,7 @@ body {
   --btn-primary: var(--theme-primary);
   --btn-text-primary: #e0e0e0;
   --btn-secondary: #e0e0e0;
+  --border-primary: #333333;
 
   --nav-icons: var(--text-primary);
 
