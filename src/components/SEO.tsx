@@ -16,7 +16,7 @@ const SEO = (props: SEO) => {
   return (
     <Helmet>
       <title>{title}</title>
-      <link rel="icon" type="image/svg+xml" href={image} />
+      <link rel="icon" href={image} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content={author} />
