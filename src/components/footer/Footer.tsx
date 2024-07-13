@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="flex items-center gap-3">
           {socialLinks.map((item) => {
             return (
-              <Link target="_blank" to={item.link}>
+              <Link target="_blank" to={item.link} key={item.name}>
                 {item.icon}
               </Link>
             );
