@@ -8,13 +8,14 @@ const ProjectCard = ({ project }: { project: PROJECT }) => {
     <motion.div
       initial={{
         opacity: 0,
-        y: -50,
+        y: -100,
       }}
       whileInView={{
         opacity: 1,
         y: 0,
         transition: {
           duration: 1, // Animation duration
+          bounce: 1,
         },
       }}
       whileHover={{

@@ -64,4 +64,20 @@ export const projects: PROJECT[] = [
       "Reserve1st is a guest management system developed for managing guest reservations, bookings and maintain a record of the clients for future use by the restaurant. This system allows the restaurant to keeps track of its guests and manage bookings accordingly",
     link: "https://estella.reserve1st.com/",
   },
+  {
+    title: "AI Article Summarizer",
+    category: "Web Application",
+    image: projectImages.aiSummarizer,
+    description:
+      "Instantly summarize articles with powerful AI. Built using Next.js, typescript and Rapid API for AI API service.",
+    link: "https://rapid-ai-summarizer.vercel.app/",
+  },
+  {
+    title: "Car Search App",
+    category: "Web Application",
+    image: projectImages.carsApp,
+    description:
+      "This web application allows users to search cars based on certain filters and uses server side rendering to fetch data. Built using Next.js and TypeScript",
+    link: "https://nextjs-cars-ten.vercel.app/",
+  },
 ];
